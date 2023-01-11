@@ -1,0 +1,2 @@
+# ivim
+Neovim configuration
