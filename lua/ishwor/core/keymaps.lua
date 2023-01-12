@@ -5,7 +5,7 @@ local k = vim.keymap -- for conciseness
 -- general keymap
 
 k.set("n", "<leader>nh", ":nohl<CR>") -- Clear search highlight
-k.set("n", "<leader>s", ":w<CR>") -- Save the file
+k.set("n", "<leader>s", ":lua vim.lsp.buf.format()<CR>:w<CR>") -- Save the file
 k.set("n", "<leader>q", ":x<CR>") -- Save the file and exit nvim
 
 k.set("n", "<leader>=", "<C-a>") -- Increment number
