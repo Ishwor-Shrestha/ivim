@@ -11,7 +11,10 @@ o.expandtab = true
 o.autoindent = true
 
 -- line wrapping
-o.wrap = false
+o.wrap = true
+
+-- line width
+o.textwidth = 120
 
 -- search settings
 o.ignorecase = true
@@ -37,3 +40,5 @@ o.splitbelow = true
 
 o.iskeyword:append("-")
 
+-- fold
+o.foldmethod = "indent"
