@@ -196,11 +196,10 @@ _G.packer_plugins = {
     path = "/Users/god/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["pretty-fold.nvim"] = {
-    config = { "\27LJ\2\n@\0\0\4\0\6\0\a6\0\0\0009\0\1\0'\2\2\0006\3\3\0009\3\4\0039\3\5\3D\0\3\0\14foldlevel\6v\bvim\6-\brep\vstring´\1\1\0\6\0\t\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\6\0005\4\4\0003\5\5\0>\5\2\4=\4\a\3=\3\b\2B\0\2\1K\0\1\0\rsections\tleft\1\0\0\0\1\a\0\0\6+\0\6 \27number_of_folded_lines\6:\fcontent\1\0\2\14fill_char\bâ€¢\21keep_indentation\1\nsetup\16pretty-fold\frequire\0" },
+  ["rust-tools.nvim"] = {
     loaded = true,
-    path = "/Users/god/.local/share/nvim/site/pack/packer/start/pretty-fold.nvim",
-    url = "https://github.com/anuvyklack/pretty-fold.nvim"
+    path = "/Users/god/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
+    url = "https://github.com/simrat39/rust-tools.nvim"
   },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
@@ -240,10 +239,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: pretty-fold.nvim
-time([[Config for pretty-fold.nvim]], true)
-try_loadstring("\27LJ\2\n@\0\0\4\0\6\0\a6\0\0\0009\0\1\0'\2\2\0006\3\3\0009\3\4\0039\3\5\3D\0\3\0\14foldlevel\6v\bvim\6-\brep\vstring´\1\1\0\6\0\t\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\6\0005\4\4\0003\5\5\0>\5\2\4=\4\a\3=\3\b\2B\0\2\1K\0\1\0\rsections\tleft\1\0\0\0\1\a\0\0\6+\0\6 \27number_of_folded_lines\6:\fcontent\1\0\2\14fill_char\bâ€¢\21keep_indentation\1\nsetup\16pretty-fold\frequire\0", "config", "pretty-fold.nvim")
-time([[Config for pretty-fold.nvim]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-treesitter ]]
