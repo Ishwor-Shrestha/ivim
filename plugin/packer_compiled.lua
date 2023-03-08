@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/Users/god/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["aquarium-vim"] = {
+    loaded = true,
+    path = "/Users/god/.local/share/nvim/site/pack/packer/start/aquarium-vim",
+    url = "https://github.com/FrenzyExists/aquarium-vim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/god/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -159,6 +164,11 @@ _G.packer_plugins = {
     path = "/Users/god/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["monokai-pro.nvim"] = {
+    loaded = true,
+    path = "/Users/god/.local/share/nvim/site/pack/packer/start/monokai-pro.nvim",
+    url = "https://github.com/loctvl842/monokai-pro.nvim"
+  },
   ["null-ls.nvim"] = {
     loaded = true,
     path = "/Users/god/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
@@ -230,6 +240,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/god/.local/share/nvim/site/pack/packer/start/vim-ReplaceWithRegister",
     url = "https://github.com/inkarkat/vim-ReplaceWithRegister"
+  },
+  ["vim-code-dark"] = {
+    loaded = true,
+    path = "/Users/god/.local/share/nvim/site/pack/packer/start/vim-code-dark",
+    url = "https://github.com/tomasiser/vim-code-dark"
   },
   ["vim-maximizer"] = {
     loaded = true,

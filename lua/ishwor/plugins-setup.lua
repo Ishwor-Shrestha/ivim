@@ -31,9 +31,14 @@ return packer.startup(function(use)
     -- packer can manage itself
     use("wbthomason/packer.nvim")
 
-    use("nvim-lua/plenary.nvim")          -- lua functions that many plugins use
+    use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
-    use("bluz71/vim-nightfly-guicolors")  -- preferred colorscheme
+    -- preferred colorscheme start
+    use("bluz71/vim-nightfly-guicolors")
+    use("loctvl842/monokai-pro.nvim")
+    use("FrenzyExists/aquarium-vim")
+    use("tomasiser/vim-code-dark")
+    -- preferred colorscheme end
 
     use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
