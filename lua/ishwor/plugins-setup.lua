@@ -9,6 +9,7 @@ local ensure_packer = function()
     end
     return false
 end
+
 local packer_bootstrap = ensure_packer() -- true if packer was just installed
 
 -- autocommand that reloads neovim and installs/updates/removes plugins
@@ -113,6 +114,9 @@ return packer.startup(function(use)
     use("hrsh7th/cmp-nvim-lsp-signature-help")
     use("hrsh7th/cmp-vsnip")
     use("hrsh7th/vim-vsnip")
+
+    -- Tablin
+    use { 'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons' }
 
     if packer_bootstrap then
         require("packer").sync()

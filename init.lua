@@ -7,6 +7,7 @@ require("ishwor.core.options")
 
 -- Plugins
 require("ishwor.plugins.comment")
+require("ishwor.plugins.bufferline")
 require("ishwor.plugins.nvm-tree")
 require("ishwor.plugins.lualine")
 require("ishwor.plugins.telescope")

@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/Users/god/.local/share/nvim/site/pack/packer/start/aquarium-vim",
     url = "https://github.com/FrenzyExists/aquarium-vim"
   },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/Users/god/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/god/.local/share/nvim/site/pack/packer/start/cmp-buffer",
