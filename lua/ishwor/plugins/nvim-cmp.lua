@@ -30,25 +30,29 @@ vim.opt.completeopt = "menu,menuone,noselect"
 vim.opt.shortmess = vim.opt.shortmess + { c = true }
 vim.api.nvim_set_option("updatetime", 300)
 
+local select_opts = { behavior = cmp.SelectBehavior.Select }
+
 -- Completion Plugin Setup
 cmp.setup({
     -- Enable LSP snippets
     snippet = {
         expand = function(args)
             luasnip.lsp_expand(args.body)
-            vim.fn["vsnip#anonymous"](args.body)
+
+            -- Don't really know what this is doing; research later
+            -- vim.fn["vsnip#anonymous"](args.body)
         end,
     },
     mapping = cmp.mapping.preset.insert({
-        ["<C-k>"] = cmp.mapping.select_prev_item(), -- previous suggestion
-        ["<C-j>"] = cmp.mapping.select_next_item(), -- next suggestion
-        ["<C-b>"] = cmp.mapping.scroll_docs(-4),
-        ["<C-f>"] = cmp.mapping.scroll_docs(4),
+        ["<C-k>"] = cmp.mapping.select_prev_item(select_opts), -- previous suggestion
+        ["<C-j>"] = cmp.mapping.select_next_item(select_opts), -- next suggestion
+        ["<C-d>"] = cmp.mapping.scroll_docs(-4),
+        ["<C-u>"] = cmp.mapping.scroll_docs(4),
         ["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
-        ["<C-e>"] = cmp.mapping.abort(),    -- close completion window
+        ["<C-e>"] = cmp.mapping.abort(),        -- close completion window
         ["<CR>"] = cmp.mapping.confirm({
             behavior = cmp.ConfirmBehavior.Insert,
-            select = true,
+            select = false,
         }),
         -- Add tab support
         ['<S-Tab>'] = cmp.mapping.select_prev_item(),
@@ -56,14 +60,14 @@ cmp.setup({
     }),
     -- sources for autocompletion
     sources = cmp.config.sources({
-        { name = "nvim_lsp" },                -- lsp
-        { name = "luasnip" },                 -- snippets
-        { name = "buffer" },                  -- text within current buffer
-        { name = "path" },                    -- file system paths
-        { name = 'nvim_lsp_signature_help' }, -- display function signatures with current parameter emphasized
+        { name = "nvim_lsp" },                                   -- lsp
+        { name = "luasnip" },                                    -- snippets
+        { name = "buffer" },                                     -- text within current buffer
+        { name = "path" },                                       -- file system paths
+        { name = 'nvim_lsp_signature_help' },                    -- display function signatures with current parameter emphasized
         { name = 'nvim_lua',               keyword_length = 2 }, -- complete neovim's Lua runtime API such vim.lsp.*
         { name = 'vsnip',                  keyword_length = 2 }, -- nvim-cmp source for vim-vsnip
-        { name = 'calc' },                    -- source for math calculation
+        { name = 'calc' },                                       -- source for math calculation
     }),
     window = {
         completion = cmp.config.window.bordered(),
