@@ -5,6 +5,7 @@ if not setup then
 end
 
 -- enable bufferline
+vim.opt.termguicolors = true
 bufferline.setup({
     options = {
         offsets = {
@@ -15,6 +16,6 @@ bufferline.setup({
                 separator = true,
             }
         },
-        separator_style = "slant",
+        separator_style = "padded_slant",
     }
 })
