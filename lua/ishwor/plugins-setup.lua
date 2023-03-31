@@ -36,7 +36,6 @@ return packer.startup(function(use)
 
     -- preferred colorscheme start
     use("bluz71/vim-nightfly-guicolors")
-    use("loctvl842/monokai-pro.nvim")
     use("FrenzyExists/aquarium-vim")
     use("tomasiser/vim-code-dark")
     -- preferred colorscheme end
@@ -115,8 +114,20 @@ return packer.startup(function(use)
     use("hrsh7th/cmp-vsnip")
     use("hrsh7th/vim-vsnip")
 
-    -- Tablin
+    -- Tabline
     use { 'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons' }
+
+    -- Visualize lsp progress
+    use({
+        "j-hui/fidget.nvim",
+        config = function()
+            require("fidget").setup()
+        end
+    })
+
+    -- Optional
+    use("nvim-lua/popup.nvim")
+    use("nvim-lua/plenary.nvim")
 
     if packer_bootstrap then
         require("packer").sync()

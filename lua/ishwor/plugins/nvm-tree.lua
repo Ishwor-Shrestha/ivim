@@ -24,7 +24,6 @@ nvimtree.setup({
             },
         },
     },
-    highlight_opened_files = "all",
     -- disable window_picker for
     -- explorer to work well with
     -- window splits
