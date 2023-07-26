@@ -32,7 +32,6 @@ treesitter.setup({
         "dockerfile",
         "gitignore",
         "go",
-        "json",
         "kotlin",
         "markdown",
         "toml",

@@ -24,14 +24,12 @@ mason_lspconfig.setup({
     ensure_installed = {
         "golangci_lint_ls",
         "gopls",
-        "jsonls",
         "jdtls",
         "kotlin_language_server",
         "lua_ls",
         "luau_lsp",
         "marksman",
         "prosemd_lsp",
-        "remark_ls",
         "zk",
     },
     -- auto-install configured servers (with lspconfig)
@@ -42,7 +40,7 @@ mason_null_ls.setup({
     -- list of formatters & linters for mason to install
     ensure_installed = {
         "prettier", -- ts/js formatter
-        "stylua", -- lua formatter
+        "stylua",   -- lua formatter
         "eslint_d", -- ts/js linter
     },
     -- auto-install configured formatters & linters (with null-ls)
