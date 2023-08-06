@@ -17,6 +17,6 @@ bufferline.setup({
             }
         },
         separator_style = "slant",
-        buffer_close_icon = '',
+        buffer_close_icon = '✕',
     }
 })

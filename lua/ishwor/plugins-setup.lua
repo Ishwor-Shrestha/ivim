@@ -10,6 +10,7 @@ local ensure_packer = function()
     return false
 end
 
+
 local packer_bootstrap = ensure_packer() -- true if packer was just installed
 
 -- autocommand that reloads neovim and installs/updates/removes plugins
@@ -67,8 +68,9 @@ return packer.startup(function(use)
     use("nvim-lualine/lualine.nvim")
 
     -- fuzzy finding w/ telescope
-    use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
-    use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" })        -- fuzzy finder
+    use({ "nvim-telescope/telescope-fzf-native.nvim" })        -- dependency for better sorting performance
+    use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
+
 
     -- autocompletion
     use("hrsh7th/nvim-cmp")   -- completion plugin
@@ -125,6 +127,7 @@ return packer.startup(function(use)
     -- Visualize lsp progress
     use({
         "j-hui/fidget.nvim",
+        tag = "legacy",
         config = function()
             require("fidget").setup()
         end
@@ -132,7 +135,6 @@ return packer.startup(function(use)
 
     -- Optional
     use("nvim-lua/popup.nvim")
-    use("nvim-lua/plenary.nvim")
 
     if packer_bootstrap then
         require("packer").sync()
