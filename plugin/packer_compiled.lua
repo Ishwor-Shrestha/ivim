@@ -140,10 +140,20 @@ _G.packer_plugins = {
     path = "/Users/god/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["github-colors"] = {
+    loaded = true,
+    path = "/Users/god/.local/share/nvim/site/pack/packer/start/github-colors",
+    url = "https://github.com/lourenci/github-colors"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/Users/god/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
+  ["jellybeans.vim"] = {
+    loaded = true,
+    path = "/Users/god/.local/share/nvim/site/pack/packer/start/jellybeans.vim",
+    url = "https://github.com/nanotech/jellybeans.vim"
   },
   ["lspkind.nvim"] = {
     loaded = true,
@@ -217,6 +227,11 @@ _G.packer_plugins = {
     path = "/Users/god/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
+  ["onedark.nvim"] = {
+    loaded = true,
+    path = "/Users/god/.local/share/nvim/site/pack/packer/start/onedark.nvim",
+    url = "https://github.com/navarasu/onedark.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/god/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -251,6 +266,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/god/.local/share/nvim/site/pack/packer/start/vim-ReplaceWithRegister",
     url = "https://github.com/inkarkat/vim-ReplaceWithRegister"
+  },
+  ["vim-brogrammer-theme"] = {
+    loaded = true,
+    path = "/Users/god/.local/share/nvim/site/pack/packer/start/vim-brogrammer-theme",
+    url = "https://github.com/marciomazza/vim-brogrammer-theme"
   },
   ["vim-code-dark"] = {
     loaded = true,

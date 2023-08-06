@@ -38,6 +38,11 @@ return packer.startup(function(use)
     use("bluz71/vim-nightfly-guicolors")
     use("FrenzyExists/aquarium-vim")
     use("tomasiser/vim-code-dark")
+    use("marciomazza/vim-brogrammer-theme")
+    use("nanotech/jellybeans.vim")
+    use("lourenci/github-colors")
+    use("navarasu/onedark.nvim")
+
     -- preferred colorscheme end
 
     use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
